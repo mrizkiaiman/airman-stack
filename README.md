@@ -1,16 +1,5 @@
 # Airman Stack
 
-A provider-neutral collection of AI agent skills for development, productivity, and project-specific workflows.
-
-Airman Stack packages each skill as a self-contained `SKILL.md` and makes the collection discoverable through the [`skills`](https://skills.sh/) CLI.
-
-## Requirements
-
-- Node.js and npm, including `npx`
-- An agent or coding tool supported by the `skills` CLI
-
-## Install from GitHub
-
 List the skills available in the stack:
 
 ```bash
@@ -30,12 +19,6 @@ npx skills add mrizkiaiman/airman-stack \
   --skill grill-me \
   --skill research \
   --skill teach
-```
-
-Install the Oliaolio ticket workflow:
-
-```bash
-npx skills add mrizkiaiman/airman-stack --skill oliaolio-tickets
 ```
 
 Install every skill globally:
@@ -80,22 +63,6 @@ Workflows connected to specific project or personal integrations.
 - `reflect-tickets` — list and plan Reflect tickets for review
 - `oliaolio-tickets` — list active Oliaolio tickets and propose concise execution plans
 
-## Install from a local clone
-
-```bash
-git clone https://github.com/mrizkiaiman/airman-stack.git
-cd airman-stack
-```
-
-The included npm scripts provide shortcuts for local discovery and installation:
-
-```bash
-npm run skills:list                 # List skills in the local repository
-npm run skills:install              # Install from the local repository
-npm run skills:install:all          # Install all skills
-npm run skills:install:all:global   # Install all skills globally
-```
-
 ## Repository layout
 
 ```text
@@ -110,21 +77,6 @@ npm run skills:install:all:global   # Install all skills globally
 ```
 
 Skills intentionally live at `skills/<skill-name>/SKILL.md` so the CLI can discover them directly. The grouping files provide organization for interactive installation and browsing without changing the individual skill names.
-
-## Add or update a skill
-
-1. Create a directory at `skills/<skill-name>/`.
-2. Add a `SKILL.md` with YAML frontmatter containing at least `name` and `description`.
-3. Keep supporting files inside that skill directory when they are needed.
-4. Add the skill to the appropriate group in both `skills.sh.json` and `.claude-plugin/marketplace.json`.
-5. Verify discovery and formatting:
-
-```bash
-npx skills add . --list
-git diff --check
-```
-
-Keep skills focused, reusable, and explicit about their safety boundaries. Prefer the smallest workflow that solves the problem without introducing project-specific assumptions unless the skill belongs in the Project-specific group.
 
 ## License
 
