@@ -22,18 +22,12 @@
     {
       "title": "Productivity",
       "description": "Research, learning, and planning workflows.",
-      "skills": [
-        "grill-me",
-        "research",
-        "teach"
-      ]
+      "skills": ["grill-me", "research", "teach"]
     },
     {
       "title": "Project-specific",
       "description": "Skills tied to project and personal workflow integrations.",
-      "skills": [
-        "reflect-tickets"
-      ]
+      "skills": ["reflect-tickets", "oliaolio-tickets"]
     }
   ]
 }
