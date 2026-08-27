@@ -1,0 +1,12 @@
+{
+  "name": "airman-stack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A provider-neutral collection of AI agent skills.",
+  "scripts": {
+    "skills:list": "npx skills add . --list",
+    "skills:install": "npx skills add .",
+    "skills:install:all": "npx skills add . --skill '*'",
+    "skills:install:all:global": "npx skills add . --skill '*' --global"
+  }
+}

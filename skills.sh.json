@@ -1,0 +1,39 @@
+{
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Development",
+      "description": "Development workflows, engineering standards, and implementation tools.",
+      "skills": [
+        "code-review",
+        "grill-with-docs",
+        "grilling",
+        "handoff",
+        "implement",
+        "improve-codebase-architecture",
+        "no-use-effect",
+        "shadcn",
+        "to-spec",
+        "to-tickets",
+        "ui-ux-pro-max",
+        "unslop"
+      ]
+    },
+    {
+      "title": "Productivity",
+      "description": "Research, learning, and planning workflows.",
+      "skills": [
+        "grill-me",
+        "research",
+        "teach"
+      ]
+    },
+    {
+      "title": "Project-specific",
+      "description": "Skills tied to project and personal workflow integrations.",
+      "skills": [
+        "reflect-tickets"
+      ]
+    }
+  ]
+}
