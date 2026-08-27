@@ -82,6 +82,15 @@ Skills that connect to project or personal workflows.
 
 Skills live at `skills/<skill-name>/SKILL.md` so the CLI can find them directly. The two grouping files organize the same skills for browsing and installation.
 
+## Upstream references
+
+These projects are references for skill design and engineering workflows. Their skills are not included automatically.
+
+- [mattpocock/skills](https://github.com/mattpocock/skills/tree/main/skills): Skills for engineering, productivity, and other workflows.
+- [Cursor pstack](https://github.com/cursor/plugins/tree/main/pstack): A Cursor plugin built around `/poteto-mode` and engineering playbooks.
+
+If a skill is copied or adapted, add its original URL to that skill’s `SKILL.md` or supporting documentation. Keep any required license or attribution notice.
+
 ## License
 
 See [LICENSE](LICENSE).
