@@ -1,6 +1,10 @@
 # Airman Stack
 
-List the skills available in the stack:
+A collection of agent skills for coding, planning, research, and project work. Each skill is a separate `SKILL.md` package that the `skills` CLI can install.
+
+## Install
+
+List the skills in the stack:
 
 ```bash
 npx skills add mrizkiaiman/airman-stack --list
@@ -27,41 +31,41 @@ Install every skill globally:
 npx skills add mrizkiaiman/airman-stack --skill '*' --global
 ```
 
-> `--skill` accepts individual skill names. `Development`, `Productivity`, and `Project-specific` are display groupings, not installable skill names.
+The `--skill` flag takes skill names, not group names. `Development`, `Productivity`, and `Project-specific` organize the list for browsing.
 
-## Available skills
+## Skills
 
 ### Development
 
-Engineering workflows, implementation guidance, and development standards.
+Skills for writing, reviewing, and planning code.
 
-- `code-review` — review changes against project standards and requirements
-- `grill-with-docs` — stress-test a plan while capturing decisions in documentation
-- `grilling` — rigorously challenge a plan or design
-- `handoff` — prepare a compact handoff for another agent or session
-- `implement` — implement work from a specification or ticket
-- `improve-codebase-architecture` — identify and evaluate architecture improvements
-- `no-use-effect` — enforce alternatives to direct React `useEffect` usage
-- `shadcn` — work with shadcn/ui components and registries
-- `to-spec` — turn a conversation into a structured specification
-- `to-tickets` — break a plan into implementation tickets
-- `ui-ux-pro-max` — apply UI/UX design intelligence to product interfaces
-- `unslop` — remove generic or artificial-sounding writing
+- `code-review`: Review changes against project standards and requirements.
+- `grill-with-docs`: Question a plan and record the decisions.
+- `grilling`: Challenge a plan or design before implementation.
+- `handoff`: Prepare a concise handoff for another agent or session.
+- `implement`: Implement work from a specification or ticket.
+- `improve-codebase-architecture`: Find and assess architecture improvements.
+- `no-use-effect`: Replace direct React `useEffect` usage with other patterns.
+- `shadcn`: Add, debug, and customize shadcn/ui components.
+- `to-spec`: Turn a conversation into a structured specification.
+- `to-tickets`: Break a plan into implementation tickets.
+- `ui-ux-pro-max`: Plan and review product interfaces.
+- `unslop`: Remove generic, artificial-sounding writing.
 
 ### Productivity
 
-Research, learning, and planning workflows.
+Skills for research, learning, and planning.
 
-- `grill-me` — sharpen an idea through a focused interview
-- `research` — investigate a topic and capture sourced findings in the repository
-- `teach` — learn a skill or concept with guided explanations
+- `grill-me`: Improve an idea through a focused interview.
+- `research`: Research a topic and save the findings in the repository.
+- `teach`: Learn a skill or concept through guided explanations.
 
 ### Project-specific
 
-Workflows connected to specific project or personal integrations.
+Skills that connect to project or personal workflows.
 
-- `reflect-tickets` — list and plan Reflect tickets for review
-- `oliaolio-tickets` — list active Oliaolio tickets and propose concise execution plans
+- `reflect-tickets`: List and plan Reflect tickets for review.
+- `oliaolio-tickets`: List active Oliaolio tickets and propose execution plans.
 
 ## Repository layout
 
@@ -70,13 +74,13 @@ Workflows connected to specific project or personal integrations.
 ├── skills/
 │   └── <skill-name>/SKILL.md       # Individual skill packages
 ├── .claude-plugin/
-│   └── marketplace.json             # Interactive marketplace grouping
+│   └── marketplace.json             # Interactive marketplace groups
 ├── skills.sh.json                   # skills.sh grouping metadata
 ├── package.json                     # Local CLI shortcuts
 └── LICENSE
 ```
 
-Skills intentionally live at `skills/<skill-name>/SKILL.md` so the CLI can discover them directly. The grouping files provide organization for interactive installation and browsing without changing the individual skill names.
+Skills live at `skills/<skill-name>/SKILL.md` so the CLI can find them directly. The two grouping files organize the same skills for browsing and installation.
 
 ## License
 
