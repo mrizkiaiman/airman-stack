@@ -66,13 +66,18 @@ Skills that connect to project or personal workflows.
 
 - `reflect-tickets`: List and plan Reflect tickets for review.
 - `oliaolio-tickets`: List active Oliaolio tickets and propose execution plans.
+- `record`: Draft and save confirmed AI-related learning records and update the current AI context.
 
 ## Repository layout
 
 ```text
 .
+├── .kiro/
+│   └── steering/                    # Repository-local agent rules
 ├── skills/
 │   └── <skill-name>/SKILL.md       # Individual skill packages
+├── learning-records/                # Personal AI-related progress records
+├── AI-CONTEXT.md                    # Derived current AI context
 ├── .claude-plugin/
 │   └── marketplace.json             # Interactive marketplace groups
 ├── skills.sh.json                   # skills.sh grouping metadata
@@ -80,7 +85,7 @@ Skills that connect to project or personal workflows.
 └── LICENSE
 ```
 
-Skills live at `skills/<skill-name>/SKILL.md` so the CLI can find them directly. The two grouping files organize the same skills for browsing and installation.
+Skills live at `skills/<skill-name>/SKILL.md` so the CLI can find them directly. The two grouping files organize the same skills for browsing and installation. `learning-records/` and `AI-CONTEXT.md` contain the repository owner's personal AI context and progress history.
 
 ## Upstream references
 

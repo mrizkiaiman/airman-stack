@@ -1,0 +1,23 @@
+{
+  "skill_name": "record",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Record this new AI workflow in my learning history: I created a repository steering rule that translates Indonesian input into English repository content while preserving technical identifiers, and I now use it as a repo-wide writing constraint.",
+      "expected_output": "The skill identifies this as a new AI-central workflow; drafts an English AI-NNNN record with evidence and impact; explains any index/context changes; and asks for explicit confirmation without writing files first.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Please add this to my learning records: I learned React hooks with help from an AI assistant and built a dashboard.",
+      "expected_output": "The skill recognizes that the subject is general software learning rather than AI-central, briefly explains that it is out of scope, and does not draft or modify a record.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to record a change in my AI workflow: Codex used to be my favorite general-purpose tool, but after using Kiro more for repository work I now prefer Kiro for that use case. Treat this as a correction to the current tool preference, while keeping the other tool preferences from the existing record.",
+      "expected_output": "The skill recognizes a correction to a fact inside the composite AI tool record; drafts an English replacement record that preserves still-current tool preferences, proposes status: replaced and replaced_by for the old composite record, updates the tools inventory and AI-CONTEXT, and waits for explicit confirmation before writing.",
+      "files": []
+    }
+  ]
+}

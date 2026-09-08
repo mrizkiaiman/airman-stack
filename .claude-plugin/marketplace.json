@@ -26,7 +26,11 @@
     {
       "name": "project-specific",
       "source": "./",
-      "skills": ["./skills/reflect-tickets", "./skills/oliaolio-tickets"]
+      "skills": [
+        "./skills/reflect-tickets",
+        "./skills/oliaolio-tickets",
+        "./skills/record"
+      ]
     }
   ]
 }
